@@ -1,0 +1,54 @@
+Systolic - 51, 220050 - 3249141
+Diastolic - 8368, 220051 - 3238175
+ETCO2 - 1817, 228640 - 6
+FiO2 - 190, 2981 - 573612
+GCS - 198, 226755 - 948167
+Glucose - 1529, 3744, 3745, 220621, 226537 - 515916
+Heart Rate - 211, 220045 - 7952908
+pH - 780, 1126, 4753 - 562230
+O2 Saturation - 220227, 220277 - 2711825
+Temperature - 678, 223761 - 1298071
+Urine - 
+
+                  List of relations
+  Schema  |          Name          | Type  |  Owner
+----------+------------------------+-------+----------
+ mimiciii | aa_medications         | table | mghassem
+ mimiciii | admissions             | table | mghassem
+ mimiciii | callout                | table | mghassem
+ mimiciii | caregivers             | table | mghassem
+ mimiciii | chartevents            | table | mghassem
+ mimiciii | cptevents              | table | mghassem
+ mimiciii | d_cpt                  | table | mghassem
+ mimiciii | d_icd_diagnoses        | table | mghassem
+ mimiciii | d_icd_procedures       | table | mghassem
+ mimiciii | d_items                | table | mghassem
+ mimiciii | d_labitems             | table | mghassem
+ mimiciii | datetimeevents         | table | mghassem
+ mimiciii | diagnoses_icd          | table | mghassem
+ mimiciii | drgcodes               | table | mghassem
+ mimiciii | electrolyte_measures   | table | mghassem
+ mimiciii | electrolyte_notes      | table | mghassem
+ mimiciii | electrolyte_population | table | mghassem
+ mimiciii | hr_measures            | table | mghassem
+ mimiciii | icustays               | table | mghassem
+ mimiciii | inputevents_cv         | table | mghassem
+ mimiciii | inputevents_mv         | table | mghassem
+ mimiciii | k_inputs               | table | mghassem
+ mimiciii | k_measures             | table | mghassem
+ mimiciii | labevents              | table | mghassem
+ mimiciii | lasix_medications      | table | mghassem
+ mimiciii | mg_inputs              | table | mghassem
+ mimiciii | mg_measures            | table | mghassem
+ mimiciii | microbiologyevents     | table | mghassem
+ mimiciii | noteevents             | table | mghassem
+ mimiciii | outputevents           | table | mghassem
+ mimiciii | patients               | table | mghassem
+ mimiciii | pop                    | table | mghassem
+ mimiciii | prescriptions          | table | mghassem
+ mimiciii | procedureevents_mv     | table | mghassem
+ mimiciii | procedures_icd         | table | mghassem
+ mimiciii | services               | table | mghassem
+ mimiciii | transfers              | table | mghassem
+ mimiciii | vdur                   | table | mghassem
+ mimiciii | ventdurations          | table | mghassem
