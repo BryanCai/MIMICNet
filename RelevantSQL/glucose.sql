@@ -23,4 +23,4 @@ AS (
   ) var
   WHERE var.itemid IN (50809, 50931)
 );
-COPY public.glucose TO 'glucose.csv' DELIMITER ',' CSV HEADER;
+\COPY public.glucose TO '../Data/glucose.csv' DELIMITER ',' CSV HEADER;

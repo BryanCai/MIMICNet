@@ -28,4 +28,4 @@ AS (
   ) var
   WHERE var.itemid IN (198, 226755)
 );
-COPY public.GCS TO 'GCS.csv' DELIMITER ',' CSV HEADER;
+\COPY public.GCS TO '../Data/GCS.csv' DELIMITER ',' CSV HEADER;

@@ -28,4 +28,4 @@ AS (
   ) var
   WHERE var.itemid IN (51, 220050)
 );
-COPY public.systolic TO 'systolic.csv' DELIMITER ',' CSV HEADER;
+\COPY public.systolic TO '../Data/systolic.csv' DELIMITER ',' CSV HEADER;

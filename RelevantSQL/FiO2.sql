@@ -28,4 +28,4 @@ AS (
   ) var
   WHERE var.itemid IN (190, 2981, 3420, 223835)
 );
-COPY public.FiO2 TO 'FiO2.csv' DELIMITER ',' CSV HEADER;
+\COPY public.FiO2 TO '../Data/FiO2.csv' DELIMITER ',' CSV HEADER;

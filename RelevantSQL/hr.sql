@@ -28,4 +28,4 @@ AS (
   ) var
   WHERE var.itemid IN (211, 220045)
 );
-COPY public.hr TO 'hr.csv' DELIMITER ',' CSV HEADER;
+\COPY public.hr TO '../Data/hr.csv' DELIMITER ',' CSV HEADER;

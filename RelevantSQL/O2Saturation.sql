@@ -28,4 +28,4 @@ AS (
   ) var
   WHERE var.itemid IN (220227, 220277)
 );
-COPY public.O2Saturation TO 'O2Saturation.csv' DELIMITER ',' CSV HEADER;
+\COPY public.O2Saturation TO '../Data/O2Saturation.csv' DELIMITER ',' CSV HEADER;

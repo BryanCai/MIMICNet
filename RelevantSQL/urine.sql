@@ -55,4 +55,4 @@ AS (
     226558  -- "L Ureteral Stent"
   )
 );
-COPY public.urine TO 'urine.csv' DELIMITER ',' CSV HEADER;
+\COPY public.urine TO '../Data/urine.csv' DELIMITER ',' CSV HEADER;

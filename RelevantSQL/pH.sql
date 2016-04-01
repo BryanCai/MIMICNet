@@ -28,4 +28,4 @@ AS (
   ) var
   WHERE var.itemid IN (780, 1126, 4753)
 );
-COPY public.pH TO 'pH.csv' DELIMITER ',' CSV HEADER;
+\COPY public.pH TO '../Data/pH.csv' DELIMITER ',' CSV HEADER;
