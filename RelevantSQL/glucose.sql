@@ -1,8 +1,7 @@
 SET search_path TO mimiciii;
 
--- Size [279514]
-DROP TABLE bcai.glucose;
-CREATE TABLE bcai.glucose 
+DROP TABLE public.glucose;
+CREATE TABLE public.glucose 
 AS (
   SELECT 
     var.subject_id,
@@ -24,3 +23,4 @@ AS (
   ) var
   WHERE var.itemid IN (50809, 50931)
 );
+COPY public.glucose TO 'glucose.csv' DELIMITER ',' CSV HEADER;

@@ -1,7 +1,7 @@
 SET search_path TO mimiciii;
 
-DROP TABLE public.hr;
-CREATE TABLE public.hr 
+DROP TABLE public.pH;
+CREATE TABLE public.pH 
 AS (
   SELECT 
     var.subject_id,
@@ -26,6 +26,6 @@ AS (
     FROM pop p 
       LEFT JOIN chartevents ce ON p.icustay_id = ce.icustay_id
   ) var
-  WHERE var.itemid IN (211, 220045)
+  WHERE var.itemid IN (780, 1126, 4753)
 );
-COPY public.hr TO 'hr.csv' DELIMITER ',' CSV HEADER;
+COPY public.pH TO 'pH.csv' DELIMITER ',' CSV HEADER;
