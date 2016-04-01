@@ -1,8 +1,8 @@
 SET search_path TO mimiciii;
 
 -- Size [279514]
-DROP TABLE glucose;
-CREATE TABLE glucose 
+DROP TABLE bcai.glucose;
+CREATE TABLE bcai.glucose 
 AS (
   SELECT 
     var.subject_id,
