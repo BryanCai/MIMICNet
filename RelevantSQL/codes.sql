@@ -7,14 +7,12 @@ AS (
   SELECT 
     var.subject_id,
     var.icustay_id,
-    var.charttime,
     var.icd9_code
   FROM (
     SELECT
       p.*,
       dia.row_id,
-      dia.itemid,
-      dia.seq_num
+      dia.seq_num,
       dia.icd9_code
     FROM pop p 
       LEFT JOIN diagnoses_icd dia ON p.hadm_id = dia.hadm_id
