@@ -18,5 +18,6 @@ AS (
       LEFT JOIN diagnoses_icd dia ON p.hadm_id = dia.hadm_id
   ) var
   WHERE var.seq_num = 1
+  AND var.subject_id < 30000
 );
 \COPY public.codes TO '../Data/codes.csv' DELIMITER ',' CSV HEADER;

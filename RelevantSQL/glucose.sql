@@ -22,5 +22,6 @@ AS (
       LEFT JOIN labevents le ON p.hadm_id = le.hadm_id
   ) var
   WHERE var.itemid IN (50809, 50931)
+  AND var.subject_id < 30000
 );
 \COPY public.glucose TO '../Data/glucose.csv' DELIMITER ',' CSV HEADER;

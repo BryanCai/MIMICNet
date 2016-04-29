@@ -27,5 +27,6 @@ AS (
       LEFT JOIN chartevents ce ON p.icustay_id = ce.icustay_id
   ) var
   WHERE var.itemid IN (211, 220045)
+  AND var.subject_id < 30000
 );
 \COPY public.hr TO '../Data/hr.csv' DELIMITER ',' CSV HEADER;

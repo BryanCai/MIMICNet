@@ -27,5 +27,6 @@ AS (
       LEFT JOIN chartevents ce ON p.icustay_id = ce.icustay_id
   ) var
   WHERE var.itemid IN (780, 1126, 4753)
+  AND var.subject_id < 30000
 );
 \COPY public.pH TO '../Data/pH.csv' DELIMITER ',' CSV HEADER;

@@ -27,5 +27,6 @@ AS (
       LEFT JOIN chartevents ce ON p.icustay_id = ce.icustay_id
   ) var
   WHERE var.itemid IN (190, 2981, 3420, 223835)
+  AND var.subject_id < 30000
 );
 \COPY public.FiO2 TO '../Data/FiO2.csv' DELIMITER ',' CSV HEADER;

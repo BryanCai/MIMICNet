@@ -54,5 +54,6 @@ AS (
     226557, -- "R Ureteral Stent"
     226558  -- "L Ureteral Stent"
   )
+  AND var.subject_id < 30000
 );
 \COPY public.urine TO '../Data/urine.csv' DELIMITER ',' CSV HEADER;

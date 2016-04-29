@@ -27,5 +27,6 @@ AS (
       LEFT JOIN chartevents ce ON p.icustay_id = ce.icustay_id
   ) var
   WHERE var.itemid IN (8368, 220051)
+  AND var.subject_id < 30000
 );
 \COPY public.diastolic TO '../Data/diastolic.csv' DELIMITER ',' CSV HEADER;

@@ -27,5 +27,6 @@ AS (
       LEFT JOIN chartevents ce ON p.icustay_id = ce.icustay_id
   ) var
   WHERE var.itemid IN (220227, 220277)
+  AND var.subject_id < 30000
 );
 \COPY public.O2Saturation TO '../Data/O2Saturation.csv' DELIMITER ',' CSV HEADER;
