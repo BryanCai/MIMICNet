@@ -7,7 +7,7 @@ AS (
   SELECT 
     var.subject_id,
     var.icustay_id,
-    var.charttime,
+    var.charttime - var.intime,
     var.value
   FROM (
     SELECT
