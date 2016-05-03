@@ -9,6 +9,6 @@ AS (
     p.intime,
     p.outtime
   FROM pop p
-  WHERE var.subject_id < 30000
+  WHERE p.subject_id < 30000
 );
 \COPY public.times TO '../Data/times.csv' DELIMITER ',' CSV HEADER;
