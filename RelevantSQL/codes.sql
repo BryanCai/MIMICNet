@@ -1,6 +1,5 @@
 SET search_path TO mimiciii;
 
--- Size [697713]
 DROP TABLE public.codes;
 CREATE TABLE public.codes 
 AS (
