@@ -28,5 +28,7 @@ AS (
   ) var
   WHERE var.itemid IN (190, 2981, 3420, 223835)
   AND var.subject_id < 30000
+  AND var.charttime BETWEEN var.intime AND var.outtime
+
 );
 \COPY public.FiO2 TO '../Data/FiO2.csv' DELIMITER ',' CSV HEADER;

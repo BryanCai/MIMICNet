@@ -28,5 +28,6 @@ AS (
   ) var
   WHERE var.itemid IN (198, 226755)
   AND var.subject_id < 30000
+  AND var.charttime BETWEEN var.intime AND var.outtime
 );
 \COPY public.GCS TO '../Data/GCS.csv' DELIMITER ',' CSV HEADER;

@@ -23,5 +23,6 @@ AS (
   ) var
   WHERE var.itemid IN (50809, 50931)
   AND var.subject_id < 30000
+  AND var.charttime BETWEEN var.intime AND var.outtime
 );
 \COPY public.glucose TO '../Data/glucose.csv' DELIMITER ',' CSV HEADER;

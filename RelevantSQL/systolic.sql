@@ -28,5 +28,6 @@ AS (
   ) var
   WHERE var.itemid IN (51, 220050)
   AND var.subject_id < 30000
+  AND var.charttime BETWEEN var.intime AND var.outtime
 );
 \COPY public.systolic TO '../Data/systolic.csv' DELIMITER ',' CSV HEADER;

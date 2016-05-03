@@ -14,7 +14,13 @@ pH = p.read_csv('../Data/pH.csv')
 systolic = p.read_csv('../Data/systolic.csv')
 urine = p.read_csv('../Data/urine.csv')
 
-data = [diastolic, FiO2, GCS, glucose, hr, O2Saturation, pH, systolic, urine]
+data = [diastolic, FiO2, GCS, glucose, hr, pH, systolic, urine]
 
 for d in data:
 	d.rename(columns={'?column?': 'time'}, inplace=True)
+
+icu_stays = set(data[0]['icustay_id'])
+
+for d in data:
+	icu_stays = icu_stays & set(d['icustay_id'])
+	print len(icu_stays)

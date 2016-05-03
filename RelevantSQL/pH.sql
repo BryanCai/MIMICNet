@@ -28,5 +28,6 @@ AS (
   ) var
   WHERE var.itemid IN (780, 1126, 4753)
   AND var.subject_id < 30000
+  AND var.charttime BETWEEN var.intime AND var.outtime
 );
 \COPY public.pH TO '../Data/pH.csv' DELIMITER ',' CSV HEADER;

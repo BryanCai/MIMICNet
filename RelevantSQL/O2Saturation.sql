@@ -28,5 +28,6 @@ AS (
   ) var
   WHERE var.itemid IN (220227, 220277)
   AND var.subject_id < 30000
+  AND var.charttime BETWEEN var.intime AND var.outtime
 );
 \COPY public.O2Saturation TO '../Data/O2Saturation.csv' DELIMITER ',' CSV HEADER;

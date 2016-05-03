@@ -55,5 +55,6 @@ AS (
     226558  -- "L Ureteral Stent"
   )
   AND var.subject_id < 30000
+  AND var.charttime BETWEEN var.intime AND var.outtime
 );
 \COPY public.urine TO '../Data/urine.csv' DELIMITER ',' CSV HEADER;
